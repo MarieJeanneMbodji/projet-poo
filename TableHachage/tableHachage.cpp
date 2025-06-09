@@ -61,6 +61,29 @@ int TableHachage::insersion(string cle,Maison& maison,int HachFunc){
         return 0;
 }
 
+Maison TableHachage::get(string cle ,int HachFunc){
+    int indice;
+    switch(HachFunc){
+            case 1:
+                indice=Hach1(cle);
+                break;
+            case 2:
+                indice=Hach2(cle);
+                break;
+            case 3:
+                indice=Hach3(cle);
+                break;
+        }
+        Noeud*courant=tab[indice];
+        while(courant!=nullptr){
+            if(courant->elmt.cle==cle){
+                return courant->elmt.maison;
+            }
+            courant=courant->suiv;
+        }
+        return courant->elmt.maison;
+}
+
 bool TableHachage::suppression(string cle,int HachFunc){
     if(nb_courant>0){
         int indice;

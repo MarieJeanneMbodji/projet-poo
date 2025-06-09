@@ -36,7 +36,7 @@ class TableHachage{
     TableHachage(int);  //constructeur
     ~TableHachage();    //destructeur
     insersion(string cle,Maison& maison,int HachFunc);  //permet d'ajouter une paire cle-valeur
-   // Maison get(string,int);     //retourne la valeure associée à une cle ie-une maison
+    Maison get(string,int);     //retourne la valeure associée à une cle ie-une maison
     bool suppression(string,int);  //suprime une paire
     bool contient(string,int);  //retourne vrai si la cle se trouve dans la table, faux sinon. sachant que la valeure depend de la fonction de hachage
     int size();     //retourne le nmbre de paires entrée dans la tabble 
