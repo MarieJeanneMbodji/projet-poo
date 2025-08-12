@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogSupprimer</class>
+ <widget class="QDialog" name="DialogSupprimer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>668</width>
+    <height>562</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #FAF9F6;
+    color: #2C2C2C;
+    font-family: &quot;Georgia&quot;;
+    font-size: 13pt;
+}
+
+QLineEdit, QTextEdit {
+    background-color: #FFFFFF;
+    color: #2C2C2C;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+QPushButton {
+    background-color: #CBA135;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #B88B2A;
+}
+</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>30</y>
+     <width>171</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia</family>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Suppression</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditCle">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>180</y>
+     <width>241</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+    background-color: #FAF9F6;
+    color: #2C2C2C;
+    font-family: &quot;Georgia&quot;;
+    font-size: 13pt;
+}
+
+QLineEdit, QTextEdit {
+    background-color: #FFFFFF;
+    color: #2C2C2C;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+QPushButton {
+    background-color: #CBA135;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #B88B2A;
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>Cle</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonSupprimer">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>250</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia</family>
+     <pointsize>13</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Supprimer</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
